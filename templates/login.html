@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login</title>
+    <link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="css/estilos.css") }}' />
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body style="margin:0px;">
+    <form name='flogin' method='POST'>
+        <div class="header">
+            <img src="../assets/rayo.PNG" alt="">
+            <p>Electra Mecanica</p>
+        </div>
+        <div class='principal'>
+            <div class='cuadro'>                
+            <h1 class="form-title">
+                <a class="welcome">Bienvenido</a>
+                <div class='wkarea'>
+                    <div class='fila'>
+                        <div class='s2'><label>Usuario</label></div>
+                        <div class='s8'><input class="input" type='text' id='usrtxt' name='usrtxt' required minlength="5" /></div>
+                    </div>
+                    <div class='fila'>
+                        <div class='s2'><label>Contraseña</label></div>
+                        <div class='s8'><input class="input" type='password' id='pwdtxt' name='pwdtxt' required minlength="8" /></div>
+                    </div>
+                    <div class='fila'>
+                        <div class='s4'><input class="btn" type='button' id='envbtn' class="buton" value='Iniciar Sesion' onclick='submit();' /></div>
+                    </div>
+                    <div class='fila'>
+                        <div class='s5'> <a> Si aún no tienes usuario registrate </a> </div>
+                    </div>
+                    <div class='fila'>
+                        <div class='s5'> <a> Recupera contraseña y/o usuario </a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

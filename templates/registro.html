@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario recuperar</title>
+    <link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="css/estilos.css") }}' />
+    <link rel="stylesheet" href="./registro.css">
+</head>
+<body style="margin:0px;">
+<form method="post">
+    <div class="header">
+        <img src="../assets/rayo.PNG" alt="">
+        <p>Electra Mecanica</p>
+    </div>
+    <div class="container">
+        <div class="box">
+            <p class="title">Registro</p>
+            <div class="form">
+                <label for="fname">Nombre</label>
+                <input class="input" id=”fname” name="fname" type=”text class="cool" />
+                <label for="email">Correo</label>
+                <input class="input" id="email" name="email" type=text class="cool" />
+                <label for="lperfil">Perfil</label>
+                <input class="input" id="lperfil" type=text/>
+                <label for="user">Usuario</label>
+                <input class="input" id="user" type=text/>
+                <label for="pasword">Contraseña</label>
+                <input class="input" id="pasword" type=text/>
+                <label for="pword">Verificar contraseña</label>
+                <input class="input" id="pword" type=text/>
+            </div>
+            <div>
+                <h4>Campos marcados con * son obligatorios</h4>
+            </div>
+            <div class="btn-container">                
+            <input class="btn" type="submit" value="Guardar" />
+            </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+
+</html>
