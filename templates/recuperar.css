@@ -1,0 +1,32 @@
+.header{
+  background-color: #E7A30E;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.principal{
+  background-color: #F2ECDF;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.title{
+  color: #022F87;
+}
+.s21{
+  font-size: 16px;
+  margin: 24px;
+}
+.input{
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 25px;
+}
+.btn{
+  background-color: #022F87;
+  color: #fff;
+  border: 1px solid #022F87;
+  border-radius: 5px;
+  padding: 10px;
+}

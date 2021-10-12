@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario recuperar</title>
     <link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="css/estilos.css") }}' />
+    <link rel="stylesheet" href="./recuperar.css">
 </head>
 
-<body>
+<body style="margin:0px;">
     <form name='flogin' method='POST'>
+        <div class="header">
+            <img src="../assets/rayo.PNG" alt="">
+            <p>Electra Mecanica</p>
+        </div>
 
         <div class='principal'>
-            <h1 clss="form-title"><a>Recuperar tu usuario o contraseña</a>
+            <h1 class="form-title"><a class="title">Recuperar tu usuario o contraseña</a>
                 <div class='wkarea'>
                     <div class='fila'>
                         <div class='s21'>
@@ -21,13 +26,13 @@
                         </div>
                     </div>
                     <div class='fila'>
-                        <div class='s8'><input type='email' id='emailtxt' name='emailtxt' required minlength="5" /></div>
+                        <div class='s8'><input class="input" type='email' id='emailtxt' name='emailtxt' required minlength="5" /></div>
                     </div>
                     <div class='fila'>
-                        <div class='s4'><input type='button' id='recuperabtn' class="buton" value='Recueprar' onclick='submit();' /></div>
+                        <div class='s4'><input class="btn" type='button' id='recuperabtn' class="buton" value='Recuperar' onclick='submit();' /></div>
                     </div>
                     <div class='fila'>
-                        <div class='s4'><input type='button' id='volverbtn' class="buton" value='volver' onclick='submit();' /></div>
+                        <div class='s4'><input class="btn" type='button' id='volverbtn' class="buton" value='volver' onclick='submit();' /></div>
                     </div>
                 </div>
     </form>
