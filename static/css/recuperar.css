@@ -5,38 +5,29 @@
   font-size: 30px;
   font-weight: bold;
 }
-.container{
+
+.principal{
   background-color: #F2ECDF;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: center;
 }
-.box{
-  background-color: #fff;
-  width: fit-content;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px;
+
+.title{
+  color: #022F87;
 }
-.form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.s21{
+  font-size: 16px;
+  margin: 24px;
 }
+
 .input{
   border: 1px solid #ccc;
   width: 300px;
   height: 25px;
-  background-color: #eee;
-  margin: 20px;
-  margin-top: 0px;
 }
-.title{
-  font-size: 24px;
-  font-weight: bold;
-}
+
 .btn{
   background-color: #022F87;
   color: #fff;
@@ -44,7 +35,21 @@
   border-radius: 5px;
   padding: 10px;
 }
-.btn-container{
+
+.btn-look {
+  background-color: #022F87;
+  color: white;
+  width: 80px;
+  height: 30px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+}
+
+a.btn-look {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
 }

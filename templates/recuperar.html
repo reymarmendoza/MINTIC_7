@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  {{ super() }}
+  {% block title %}
+    <title>Recuperar</title>
+  {% endblock %}
+  {% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/recuperar.css') }}">
+  {% endblock %}
+{% endblock %}
+
+{% block body %}
+<form method="POST">
+  <div class="principal">
+    <a class="title form-title">Recuperar tu usuario o contraseña</a>
+    <div class='wkarea'>
+      <div class='fila'>
+        <div class='s21'>
+          <label>Digite el correo electrónico con el que se registró al sistema</label>
+        </div>
+      </div>
+
+      <div class='fila'>
+        <div class='s8'><input class="input" type='email' id='emailtxt' name='emailtxt' required minlength="5" /></div>
+      </div>
+
+      <div class='fila'>
+        <div class='s4'><input class="" type='button' id='recuperabtn' class="buton" value='Recuperar' onclick='submit();' /></div>
+      </div>
+      
+      <div class='fila'>
+        <a class='s4' href="#"></a>
+      </div>
+    </div>
+  </div>
+</form>
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}

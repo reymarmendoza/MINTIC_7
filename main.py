@@ -1,5 +1,4 @@
-from flask import Flask, request, make_response, redirect, render_template
-# asi me permite invocar os para acceder a .env
+from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
@@ -14,9 +13,21 @@ def index():
 def acceso():
 	return render_template('acceso.html')
 
+@app.route('/registro')
+def registro():
+	return render_template('registro.html')
+
+@app.route('/recuperar')
+def recuperar():
+	return render_template('recuperar.html')
+
 @app.route('/usuario')
 def usuario():
 	return render_template('usuario.html')
+
+@app.route('/empleado')
+def empleado():
+	return render_template('empleado.html')
 
 @app.route('/proveedores')
 def proveedores():
