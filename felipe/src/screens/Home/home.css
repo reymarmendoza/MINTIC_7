@@ -1,0 +1,44 @@
+* {  
+  margin: 0px
+}
+.container {
+  background-color: #F2ECDF;
+}
+.header {
+  background-color: #E7A30E;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 200px;
+}
+.btn-login {
+  background-color: #022F87;
+  color: white;
+  width: 80px;
+  height: 30px;
+}
+.fila {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.imagen {
+  width: 40px;
+}
+.title {
+  white-space: nowrap;
+}
+.number {
+  color: #022F87;
+  margin: 5px;
+}
