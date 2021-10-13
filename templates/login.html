@@ -28,11 +28,11 @@
                         <div class='s4'><input type='button' id='envbtn' class="buton" value='Iniciar Sesion' onclick='submit();' /></div>
                     </div>
                     <div class='fila'>
-                        <div class='s5'> <a href=""> Si aun no tienes usuario registrate </a> </div>
+                        <div class='s5'> <a href="{{ url_for('templates', filename='registro.html') }}"> Si aun no tienes usuario registrate </a> </div>
 
                     </div>
                     <div class='fila'>
-                        <div class='s51'> <a href=""> Recupera contraseña y/o usuario </a> </div>
+                        <div class='s51'> <a href="{{ url_for('templates', filename='recuperar.html') }}"> Recupera contraseña y/o usuario </a> </div>
 
                     </div>
 
