@@ -21,6 +21,7 @@ html {
     font-size: 14px;
     position: absolute;
     margin-top: -10px;
+    
 }
 
 .s21 {
@@ -29,6 +30,7 @@ html {
     font-family: 'Roboto';
     color: #000000;
     font-style: normal;
+    margin-top: 15px;
 }
 
 .s3 {
@@ -44,22 +46,33 @@ html {
 
 .s4 {
     width: 40%;
-    float: left;
+    margin-top: 5px;
+    margin-left: 50px;
 }
 
+.btn{
+    background-color: #022f87;
+    color: rgb(255, 255, 255);
+    border: 1px solid #022F87;
+    border-radius: 5px;
+    
+
+  }
 .s5 {
     font-size: 18px;
     margin-top: 40px;
+    margin-right: 30px;
     width: 60%;
     float: left;
     text-overflow: ellipsis;
     white-space: pre;
-    text-align: center;
+    text-align: left;
     position: absolute;
     font-family: 'Roboto', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: normal;
     color: #022F87;
+
 }
 
 .s51 {
@@ -84,8 +97,8 @@ html {
 .s8 {
     width: 100%;
     display: center;
-    width: 70%;
-    height: 45px;
+    width: 80%;
+    height: 65px;
     margin-top: 30px;
 }
 
