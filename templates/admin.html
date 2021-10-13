@@ -1,50 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./admin.css">
-  <title>Inicio</title>
-</head>
-<body>
-  <div class="header">
-    <div class="logo-header">
-      <img class="logo" src="../../assets/trueno.PNG" alt="Logo">
-      <h2>Electra Mecanica</h2>
-    </div>
-    <div class="right-header">
-      <div class="titles">
-        <p>Fernando</p>
-        <p>Administrador</p>
-      </div>
-      <img class="perfil" src="../../assets/perfil.PNG" alt="Perfil">
-      <button class="btn-logout">Log out</button>
-    </div>
-  </div>
+{% extends 'base.html' %}
+
+{% block header %}
+  {{ super() }}
+  {% block title %}
+    <title>Administrador</title>
+  {% endblock %}
+  {% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+  {% endblock %}
+{% endblock %}
+
+{% block body %}
   <div class="container">
     <div class="columnas">
       <div class="fila">
-        <img class="admin-img" src="../../assets/productoadmin.PNG" alt="">        
-        <button class="items-btn">Añadir Producto</button>
-        <button class="items-btn">Solicitar Producto</button>
-        <button class="items-btn">Actualizar Producto</button>
-        <button class="items-btn">Remover Producto</button>
+        <img class="admin-img" src="static/assets/productoadmin.PNG" alt="">
+        <a class="items-btn" href="productos">Añadir Producto</a>
+        <a class="items-btn" href="productos">Solicitar Producto</a>
+        <a class="items-btn" href="productos">Actualizar Producto</a>
+        <a class="items-btn" href="productos">Remover Producto</a>
       </div>
       <div class="fila">
-        <img  class="admin-img"src="../../assets/proveedoradmin.PNG" alt="">
-        <button class="items-btn">Añadir Proveedor</button>
-        <button class="items-btn">Actualizar Proveedor</button>
-        <button class="items-btn">Remover Proveedor</button>
+        <img  class="admin-img"src="static/assets/proveedoradmin.PNG" alt="">
+        <a class="items-btn" href="proveedores">Añadir Proveedor</a>
+        <a class="items-btn" href="proveedores">Actualizar Proveedor</a>
+        <a class="items-btn" href="proveedores">Remover Proveedor</a>
       </div>
       <div class="fila">
-        <img class="admin-img" src="../../assets/empleadosadmin.PNG" alt="">
-        <button class="items-btn">Añadir Empleado</button>
-        <button class="items-btn">Mostrar Empleado</button>
-        <button class="items-btn">Actualizar Empleado</button>
-        <button class="items-btn">Remover Empleado</button>
+        <img class="admin-img" src="static/assets/empleadosadmin.PNG" alt="">
+        <a class="items-btn" href="empleado">Añadir Empleado</a>
+        <a class="items-btn" href="empleado">Mostrar Empleado</a>
+        <a class="items-btn" href="empleado">Actualizar Empleado</a>
+        <a class="items-btn" href="empleado">Remover Empleado</a>
       </div>
     </div>
   </div>
-</body>
-</html>
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}

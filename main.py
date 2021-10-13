@@ -25,6 +25,10 @@ def recuperar():
 def usuario():
 	return render_template('usuario.html')
 
+@app.route('/admin')
+def admin():
+	return render_template('admin.html')
+
 @app.route('/empleado')
 def empleado():
 	return render_template('empleado.html')
