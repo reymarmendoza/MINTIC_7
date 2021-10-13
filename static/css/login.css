@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
 }
+
 .cuadro{
   background-color: #F2ECD0;
   padding: 20px;
@@ -12,16 +13,19 @@
   align-items: center;
   text-align: center;
 }
+
 .welcome{
   color: #022F87;
   font-weight: bold;
   padding-bottom: 20px;
 }
+
 .input{
   border: 1px solid #ccc;
   width: 300px;
   height: 25px;
 }
+
 .btn{
   background-color: #022F87;
   color: #fff;
@@ -30,10 +34,12 @@
   border-radius: 5px;
   margin: 10px;
 }
+
 .s5{
   color: #022F87;
   font-size: 18px;
 }
+
 .header{
   background-color: #E7A30E;
   display: flex;

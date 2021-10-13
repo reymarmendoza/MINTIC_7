@@ -10,6 +10,10 @@ app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
 def index():
 	return render_template('index.html')
 
+@app.route('/login')
+def login():
+	return render_template('login.html')
+
 @app.route('/usuario')
 def usuario():
 	return render_template('usuario.html')
