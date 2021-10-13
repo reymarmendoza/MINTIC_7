@@ -4,30 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"> <!-- ../static/css/index.css -->
   <title>Inicio</title>
 </head>
 <body>
   <div class="header">
-    <button class="btn-login">Login</button>
+    <!-- HAY QUE DECIDIR QUE VOY A MOSTRAR DE ACUERDO AL PERFIL -->
+    <a class="btn-login" href="usuario">Login</a>
   </div>
   <div class="container">
     <div class="logo-container">
-      <img class="logo" src="../../assets/logo.PNG" alt="Logo">
+      <img class="logo" src="static/assets/logo.PNG" alt="Logo">
     </div>
     <div class="fila">
       <div class="item">
-        <img class="imagen" src="../../assets/usuario.PNG" alt="Usuarios">
+        <img class="imagen" src="static/assets/usuario.PNG" alt="Usuarios">
         <p class="title">Usuarios registrados </p>
         <p class="number">56</p>
       </div>
       <div class="item">
-        <img class="imagen" src="../../assets/productos.PNG" alt="Productos">
+        <img class="imagen" src="static/assets/productos.PNG" alt="Productos">
         <p class="title">Productos registrados </p>
         <p class="number">3</p>
       </div>
       <div class="item">
-        <img class="imagen" src="../../assets/proveedores.PNG" alt="Proveedores">
+        <img class="imagen" src="static/assets/proveedores.PNG" alt="Proveedores">
         <p class="title">Proveedores registrados </p>
         <p class="number">5</p>
       </div>

@@ -4,12 +4,15 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
-'''
+
 @app.route('/')
 def index():
-	response = make_response(redirect('/proveedores'))
-	return response
-'''
+	return render_template('index.html')
+
+@app.route('/usuario')
+def usuario():
+	return render_template('usuario.html')
+
 @app.route('/proveedores')
 def proveedores():
 	return render_template('proveedores.html')

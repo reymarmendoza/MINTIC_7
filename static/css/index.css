@@ -22,6 +22,9 @@
   color: white;
   width: 80px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fila {
   display: flex;
@@ -41,4 +44,14 @@
 .number {
   color: #022F87;
   margin: 5px;
+}
+
+/*  */
+
+a.btn-login {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
 }
