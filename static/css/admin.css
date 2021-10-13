@@ -1,9 +1,11 @@
 * {  
   margin: 0px
 }
+
 .container {
   background-color: #F2ECDF;
 }
+
 .header {
   background-color: #E7A30E;
   height: 100px;
@@ -12,23 +14,28 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .logo-header {
   margin-left: 10px;
   display: flex;
   align-items: center;
 }
+
 .right-header {
   display: flex;
   align-items: center;
 }
+
 .perfil {
   height: 80px;
 }
+
 .logo-container {
   display: flex;
   justify-content: center;
   padding: 200px;
 }
+
 .btn-logout {
   background-color: #022F87;
   color: white;
@@ -36,16 +43,20 @@
   height: 30px;
   margin-right: 10px;
 }
+
 .imagen {
   width: 40px;
 }
+
 .title {
   white-space: nowrap;
 }
+
 .number {
   color: #022F87;
   margin: 5px;
 }
+
 .columnas {
   display: flex;
   flex-direction: row;
@@ -54,15 +65,18 @@
   align-items: flex-start;
   justify-content: space-around;
 }
+
 .fila {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
 }
+
 .admin-img {
   width: 80%;
 }
+
 .items-btn {
   padding: 20px;
   padding-top: 10px;
@@ -71,7 +85,10 @@
   background-color: #FFD67B;
   border: none;
   border-radius: 5px;
+  text-decoration: none;
+  color: black;
 }
+
 .items-btn:hover {
   background-color: #E7A30E;
   cursor: pointer;

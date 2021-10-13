@@ -1,0 +1,2 @@
+Eliminar accesoBase.css
+acceso tiene varias inconsistencias

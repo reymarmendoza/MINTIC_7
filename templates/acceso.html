@@ -6,22 +6,22 @@
     <title>Login</title>
   {% endblock %}
   {% block css %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/accesoBase.css') }}" />
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/accesoBase.css') }}" /> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/acceso.css') }}" />
   {% endblock %}
 {% endblock %}
 
 {% block body %}
   <form name='flogin' method='POST'>
-    <div class="header">
+    <!-- <div class="header">
       <img src="../assets/rayo.PNG" alt="">
       <p>Electra Mecanica</p>
-    </div>
+    </div> -->
 
     <div class='principal'>
       <div class='cuadro'>
       <h1 class="form-title">
-        <a class="welcome">Bienvenido</a>
+        <!-- <a class="welcome">Bienvenido</a> -->
         <div class='wkarea'>
             <div class='fila'>
               <div class='s2'><label>Usuario</label></div>
@@ -33,7 +33,7 @@
             </div>
             <div class='fila'>
               <div class='s4'>
-                <a class="btn btn-outline-success" href="usuario">Iniciar sesion</a>
+                <a class="btn-log btn-outline-success" href="usuario">Iniciar sesion</a>
                 <!-- <input class="btn" type='button' id='envbtn' class="buton" value='Iniciar Sesion' onclick='submit();' /> -->
               </div>
             </div>
