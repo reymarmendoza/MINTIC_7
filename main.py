@@ -1,10 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 import os
 
 app = Flask(__name__)
 # algunos navegadores agregan un / por defecto al final de la url, lo que hace fallar la ruta en flask, con esta flag se evita ese comportamiento
 app.url_map.strict_slashes = False
-app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
+
+data = []
 
 @app.route('/')
 @app.route('/index')
@@ -15,9 +16,53 @@ def index():
 def acceso():
 	return render_template('acceso.html')
 
-@app.route('/registro', methods=['GET', 'POST'])
+@app.route('/accesoHandler', methods=['GET', 'POST'])
+def accesoHandler():
+	if request.method == 'POST':
+		print("test")
+		user = request.form['fieldUsuario']
+		pwd = request.form['fieldPassword']
+
+		if user == os.getenv("USER") and pwd == os.getenv("USER") :
+			print("Login correcto")
+		else :
+			print("Login fallido")
+
+	return redirect('acceso')
+
+@app.route('/registro')
 def registro():
 	return render_template('registro.html')
+
+@app.route('/registroHandler', methods=['POST'])
+def registroHandler():
+	if request.method == 'POST':
+		# result = request.form # obtener todo el formulario
+		fname = request.form['fname']
+		email = request.form['email']
+		profile = request.form['profile']
+		user = request.form['user']
+		password = request.form['password']
+		confirmPwd = request.form['confirmPwd']
+		
+		if password == confirmPwd and len(password) >= 6:
+			userForm = [fname, email, profile, user, password]
+			
+			valid = True
+			for field in userForm :
+				if field == '' :
+					valid = False
+
+			if valid :
+				data.append(userForm)
+
+		else :
+			print("Contrasena no coincide")
+
+		for i in data :
+			print(i)
+
+	return redirect('registro')
 
 @app.route('/recuperar', methods=['GET', 'POST'])
 def recuperar():
