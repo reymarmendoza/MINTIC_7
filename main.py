@@ -5,8 +5,8 @@ app = Flask(__name__)
 # algunos navegadores agregan un / por defecto al final de la url, lo que hace fallar la ruta en flask, con esta flag se evita ese comportamiento
 app.url_map.strict_slashes = False
 
+app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
 data = []
-loginToken = "superadmin"
 
 @app.route('/')
 @app.route('/index')
@@ -23,8 +23,7 @@ def accesoHandler():
 		user = request.form['fieldUsuario']
 		pwd = request.form['fieldPassword']
 
-		# if user == os.getenv("USER") and pwd == os.getenv("USER") :
-		if user == loginToken and pwd == loginToken :
+		if user == app.config['SECRET_KEY'] and pwd == app.config['SECRET_KEY'] :
 			print("Login correcto")
 			return render_template('registro.html')
 		else :
