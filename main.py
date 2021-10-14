@@ -2,6 +2,8 @@ from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
+# algunos navegadores agregan un / por defecto al final de la url, lo que hace fallar la ruta en flask, con esta flag se evita ese comportamiento
+app.url_map.strict_slashes = False
 app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
 
 @app.route('/')

@@ -6,50 +6,32 @@
     <title>Login</title>
   {% endblock %}
   {% block css %}
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/accesoBase.css') }}" /> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/acceso.css') }}" />
   {% endblock %}
 {% endblock %}
 
 {% block body %}
-  <form name='flogin' method='POST'>
-    <!-- <div class="header">
-      <img src="../assets/rayo.PNG" alt="">
-      <p>Electra Mecanica</p>
-    </div> -->
-
-    <div class='principal'>
-      <div class='cuadro'>
-      <h1 class="form-title">
-        <!-- <a class="welcome">Bienvenido</a> -->
-        <div class='wkarea'>
-            <div class='fila'>
-              <div class='s2'><label>Usuario</label></div>
-              <div class='s8'><input class="input" type='text' id='usrtxt' name='usrtxt' required minlength="5" /></div>
-            </div>
-            <div class='fila'>
-              <div class='s2'><label>Contraseña</label></div>
-              <div class='s8'><input class="input" type='password' id='pwdtxt' name='pwdtxt' required minlength="8" /></div>
-            </div>
-            <div class='fila'>
-              <div class='s4'>
-                <a class="btn-log btn-outline-success" href="usuario">Iniciar sesion</a>
-                <!-- <input class="btn" type='button' id='envbtn' class="buton" value='Iniciar Sesion' onclick='submit();' /> -->
-              </div>
-            </div>
-            <div class='fila'>
-              <div class='s5'> 
-                <a href="registro"> Si aún no tienes usuario registrate </a> 
-              </div>
-            </div>
-            <div class='fila'>
-              <div class='s5'> 
-                <a href='recuperar'> Recupera contraseña y/o usuario </a> </div>
-            </div>
-        </div>
+  <div class="container">
+    <form class="col-4" method="POST">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Usuario</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
-    </div>
-  </form>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="mb-3 link">
+        <a href="registro">Si aún no tienes usuario registrate</a> 
+      </div>
+      <div class="mb-3 link">
+        <a href='recuperar'>Recupera contraseña y/o usuario</a>
+      </div>
+    </form>
+  </div>
 {% endblock %}
 
 {% block footer %}
