@@ -6,6 +6,7 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 data = []
+loginToken = "superadmin"
 
 @app.route('/')
 @app.route('/index')
@@ -19,12 +20,13 @@ def acceso():
 @app.route('/accesoHandler', methods=['GET', 'POST'])
 def accesoHandler():
 	if request.method == 'POST':
-		print("test")
 		user = request.form['fieldUsuario']
 		pwd = request.form['fieldPassword']
 
-		if user == os.getenv("USER") and pwd == os.getenv("USER") :
+		# if user == os.getenv("USER") and pwd == os.getenv("USER") :
+		if user == loginToken and pwd == loginToken :
 			print("Login correcto")
+			return render_template('registro.html')
 		else :
 			print("Login fallido")
 
