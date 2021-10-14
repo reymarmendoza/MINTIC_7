@@ -11,15 +11,15 @@ app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
 def index():
 	return render_template('index.html')
 
-@app.route('/acceso')
+@app.route('/acceso', methods=['GET', 'POST'])
 def acceso():
 	return render_template('acceso.html')
 
-@app.route('/registro')
+@app.route('/registro', methods=['GET', 'POST'])
 def registro():
 	return render_template('registro.html')
 
-@app.route('/recuperar')
+@app.route('/recuperar', methods=['GET', 'POST'])
 def recuperar():
 	return render_template('recuperar.html')
 
@@ -35,11 +35,11 @@ def admin():
 def empleado():
 	return render_template('empleado.html')
 
-@app.route('/proveedores')
+@app.route('/proveedores', methods=['GET', 'POST', 'DELETE'])
 def proveedores():
 	return render_template('proveedores.html')
 
-@app.route('/productos')
+@app.route('/productos', methods=['GET', 'POST', 'DELETE'])
 def productos():
 	return render_template('productos.html')
 	

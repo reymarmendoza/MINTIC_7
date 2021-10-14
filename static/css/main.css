@@ -10,11 +10,11 @@ button{
 .navbar{
 	display: flex;
 	justify-content: space-between;
+	background-color: #E7A30E;
 }
 
 .rightMenu{
 	display: flex;
-
 }
 
 .avatar{
@@ -31,4 +31,28 @@ button{
 .menuBotones{
 	display: flex;
 	justify-content: space-between;
+}
+
+/*  */
+
+.menuBotones > a{
+	width: 15%;
+}
+
+.btn-look {
+  background-color: #022F87;
+  color: white;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.btn-look {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
 }

@@ -11,30 +11,20 @@
 {% endblock %}
 
 {% block body %}
-<form method="POST">
-  <div class="principal">
-    <a class="title form-title">Recuperar tu usuario o contraseña</a>
-    <div class='wkarea'>
-      <div class='fila'>
-        <div class='s21'>
-          <label>Digite el correo electrónico con el que se registró al sistema</label>
-        </div>
+  <div class="container">
+    <form class="col-4" method="POST">
+      <div class="mb-3">
+        <h4>Recupera tu usuario o contraseña</h4>
       </div>
-
-      <div class='fila'>
-        <div class='s8'><input class="input" type='email' id='emailtxt' name='emailtxt' required minlength="5" /></div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Digite el correo electronico con el que se registro en el sistema</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
-
-      <div class='fila'>
-        <div class='s4'><input class="" type='button' id='recuperabtn' class="buton" value='Recuperar' onclick='submit();' /></div>
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
-      
-      <div class='fila'>
-        <a class='s4' href="#"></a>
-      </div>
-    </div>
+    </form>
   </div>
-</form>
 {% endblock %}
 
 {% block footer %}
